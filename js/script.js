@@ -12,8 +12,8 @@ audio.volume = volume;
 
 if (tracks.length === 0) {
     tracks = [
-        { id: 1, title: 'Me Enxergou na Minha Tormenta', artist: 'Paulo Vitor', genre: 'Gospel', year: '2023', emoji: '🎧', url: './music/lindo-momento.mp3', liked: false },
-        { id: 2, title: 'Acoustic Morning', artist: 'Sol Maior', genre: 'Acústico', year: '2022', emoji: '🎸', url: '', liked: true },
+        { id: 1, title: 'Me Enxergou na Minha Tormenta', artist: 'Paulo Vitor', genre: 'Gospel', year: '2023', emoji: '🎸', url: './music/lindo-momento.mp3', liked: false },
+        { id: 2, title: 'Fhop Music - Único', artist: 'Paulo Vitor', genre: 'Gospel', year: '2022', emoji: '🎸', url: './music/fhop-unico.mp3', liked: true },
         { id: 3, title: 'Electronic Dreams', artist: 'Synth Master', genre: 'Electronic', year: '2024', emoji: '🎹', url: '', liked: false },
         { id: 4, title: 'Samba do Coração', artist: 'Grupo Raiz', genre: 'MPB', year: '2021', emoji: '🌊', url: '', liked: true },
         { id: 5, title: 'Night Drive', artist: 'NeonCity', genre: 'Synthwave', year: '2023', emoji: '🔥', url: '', liked: false },
@@ -34,7 +34,7 @@ function render(list) {
     countEl.textContent = `${tracks.length} faixa${tracks.length !== 1 ? 's' : ''} na sua biblioteca`;
     visEl.textContent = list.length !== tracks.length ? `${list.length} resultados` : '';
 
-    tl.innerHTML = list.map((t, i) => `
+    tl.innerHTML = list.map((t) => `
     <div class="track-item ${currentIdx !== -1 && tracks[currentIdx]?.id === t.id ? 'active' : ''}" onclick="playTrack(${tracks.indexOf(t)})">
       <div class="track-num">
         ${currentIdx !== -1 && tracks[currentIdx]?.id === t.id
@@ -181,9 +181,13 @@ audio.addEventListener('ended', () => {
 audio.addEventListener('play', () => { isPlaying = true; updatePlayBtn(); render(tracks); });
 audio.addEventListener('pause', () => { isPlaying = false; updatePlayBtn(); render(tracks); });
 
-function seekTo(e) {
-    const bar = document.getElementById('progressBar');
-    const pct = e.offsetX / bar.offsetWidth;
+// ── Barra de progresso: suporte a mouse E toque ──
+function getProgressPct(bar, clientX) {
+    const rect = bar.getBoundingClientRect();
+    return Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+}
+
+function applySeek(pct) {
     if (audio.duration) {
         audio.currentTime = pct * audio.duration;
     } else {
@@ -194,6 +198,30 @@ function seekTo(e) {
     }
 }
 
+const progressBar = document.getElementById('progressBar');
+
+// Mouse
+progressBar.addEventListener('click', (e) => {
+    applySeek(getProgressPct(progressBar, e.clientX));
+});
+
+// Touch - deslizar o dedo
+let isSeeking = false;
+progressBar.addEventListener('touchstart', (e) => {
+    isSeeking = true;
+    e.preventDefault();
+    applySeek(getProgressPct(progressBar, e.touches[0].clientX));
+}, { passive: false });
+
+progressBar.addEventListener('touchmove', (e) => {
+    if (!isSeeking) return;
+    e.preventDefault();
+    applySeek(getProgressPct(progressBar, e.touches[0].clientX));
+}, { passive: false });
+
+progressBar.addEventListener('touchend', () => { isSeeking = false; });
+
+// ── Volume ──
 function setVolume(e) {
     const bar = document.getElementById('volSlider');
     volume = Math.max(0, Math.min(1, e.offsetX / bar.offsetWidth));
@@ -274,7 +302,6 @@ function addTrack() {
     ['inputTitle', 'inputArtist', 'inputGenre', 'inputYear', 'inputUrl'].forEach(id => document.getElementById(id).value = '');
     render(tracks);
 }
-
 
 function setNav(el) {
     document.querySelectorAll('.nav-item').forEach(e => e.classList.remove('active'));
