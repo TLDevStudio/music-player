@@ -24,6 +24,9 @@ if (tracks.length === 0) {
         { id: 10, title: 'Como Flecha - Guitar Cover', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/como-flecha.mp3', liked: true },
         { id: 11, title: 'Solo Há Poder', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/ha-poder.mp3', liked: false },
         { id: 12, title: 'Guitar Cam Um Novo Dia', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/novo-dia.mp3', liked: true },
+        { id: 13, title: 'Lindo Momento', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/lindo-momento-rony.mp4', liked: false },
+        { id: 14, title: 'Você Tem Valor', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/voce-tem-valor.mp4', liked: true },
+        { id: 15, title: 'Aonde Está Deus', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/aonde-esta-Deus.mp4', liked: true },
     ];
     saveTracks();
 }
