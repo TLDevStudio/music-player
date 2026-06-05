@@ -12,11 +12,18 @@ audio.volume = volume;
 
 if (tracks.length === 0) {
     tracks = [
-        { id: 1, title: 'Me Enxergou na Minha Tormenta', artist: 'Paulo Vitor', genre: 'Gospel', year: '2023', emoji: '🎸', url: './music/lindo-momento.mp3', liked: false },
-        { id: 2, title: 'Fhop Music - Único', artist: 'Paulo Vitor', genre: 'Gospel', year: '2022', emoji: '🎸', url: './music/fhop-unico.mp3', liked: true },
-        { id: 3, title: 'Electronic Dreams', artist: 'Synth Master', genre: 'Electronic', year: '2024', emoji: '🎹', url: '', liked: false },
-        { id: 4, title: 'Samba do Coração', artist: 'Grupo Raiz', genre: 'MPB', year: '2021', emoji: '🌊', url: '', liked: true },
-        { id: 5, title: 'Night Drive', artist: 'NeonCity', genre: 'Synthwave', year: '2023', emoji: '🔥', url: '', liked: false },
+        { id: 1, title: 'Me Enxergou na Minha Tormenta', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/lindo-momento.mp3', liked: false },
+        { id: 2, title: 'Fhop Music - Único', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/fhop-unico.mp3', liked: true },
+        { id: 3, title: 'Quebra o Silêncio', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/quebra-o-silencio.mp3', liked: false },
+        { id: 4, title: 'Quem é Esse', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/quem-e-esse.mp3', liked: true },
+        { id: 5, title: 'Até Que o Senhor Venha', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/ate-que-o-senhor-venha.mp3', liked: false },
+        { id: 6, title: 'O Lamento de Israel', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/o-lamento-de-israel.mp3', liked: true },
+        { id: 7, title: 'Colossenses e Suas Linhas de Amor', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/colossenses.mp3', liked: false },
+        { id: 8, title: 'Tu És + Águas Purificadoras', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/tu-es.mp3', liked: true },
+        { id: 9, title: 'Solo Um Novo Dia', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/um-novo-dia.mp3', liked: false },
+        { id: 10, title: 'Como Flecha - Guitar Cover', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/como-flecha.mp3', liked: true },
+        { id: 11, title: 'Solo Há Poder', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/ha-poder.mp3', liked: false },
+        { id: 12, title: 'Guitar Cam Um Novo Dia', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/novo-dia.mp3', liked: true },
     ];
     saveTracks();
 }
