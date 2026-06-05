@@ -26,7 +26,8 @@ if (tracks.length === 0) {
         { id: 12, title: 'Guitar Cam Um Novo Dia', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/novo-dia.mp3', liked: true },
         { id: 13, title: 'Lindo Momento', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/lindo-momento-rony.mp4', liked: false },
         { id: 14, title: 'Você Tem Valor', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/voce-tem-valor.mp4', liked: true },
-        { id: 15, title: 'Aonde Está Deus', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/aonde-esta-Deus.mp4', liked: true },
+        { id: 15, title: 'Aonde Está Deus', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/aonde-esta-Deus.mp4', liked: false },
+        { id: 16, title: 'Deus de Promessas', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/Deus-de-promessas.mp4', liked: false },
     ];
     saveTracks();
 }
