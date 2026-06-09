@@ -12,23 +12,23 @@ audio.volume = volume;
 
 if (tracks.length === 0) {
     tracks = [
-        { id: 1, title: 'Me Enxergou na Minha Tormenta', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/lindo-momento.mp3', liked: false },
-        { id: 2, title: 'Fhop Music - Único', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/fhop-unico.mp3', liked: true },
-        { id: 3, title: 'Quebra o Silêncio', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/quebra-o-silencio.mp3', liked: false },
-        { id: 4, title: 'Quem é Esse', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/quem-e-esse.mp3', liked: true },
-        { id: 5, title: 'Até Que o Senhor Venha', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/ate-que-o-senhor-venha.mp3', liked: false },
-        { id: 6, title: 'O Lamento de Israel', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/o-lamento-de-israel.mp3', liked: true },
-        { id: 7, title: 'Colossenses e Suas Linhas de Amor', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/colossenses.mp3', liked: false },
-        { id: 8, title: 'Tu És + Águas Purificadoras', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/tu-es.mp3', liked: true },
-        { id: 9, title: 'Solo Um Novo Dia', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/um-novo-dia.mp3', liked: false },
-        { id: 10, title: 'Como Flecha - Guitar Cover', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/como-flecha.mp3', liked: true },
-        { id: 11, title: 'Solo Há Poder', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/ha-poder.mp3', liked: false },
-        { id: 12, title: 'Guitar Cam Um Novo Dia', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/novo-dia.mp3', liked: true },
-        { id: 13, title: 'Lindo Momento', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/lindo-momento-rony.mp4', liked: false },
-        { id: 14, title: 'Você Tem Valor', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/voce-tem-valor.mp4', liked: true },
-        { id: 15, title: 'Aonde Está Deus', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/aonde-esta-Deus.mp4', liked: false },
-        { id: 16, title: 'Deus de Promessas', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/Deus-de-promessas.mp4', liked: true },
-        { id: 17, title: 'Teste', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/Deus-de-promessas.mp4', liked: false },
+        { id: 1, title: 'Me Enxergou na Minha Tormenta', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/lindo-momento.mp3', liked: false, playlist: 'Guitar Covers' },
+        { id: 2, title: 'Fhop Music - Único', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/fhop-unico.mp3', liked: true, playlist: 'Guitar Covers' },
+        { id: 3, title: 'Quebra o Silêncio', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/quebra-o-silencio.mp3', liked: false, playlist: 'Guitar Covers' },
+        { id: 4, title: 'Quem é Esse', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/quem-e-esse.mp3', liked: true, playlist: 'Guitar Covers' },
+        { id: 5, title: 'Até Que o Senhor Venha', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/ate-que-o-senhor-venha.mp3', liked: false, playlist: 'Guitar Covers' },
+        { id: 6, title: 'O Lamento de Israel', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/o-lamento-de-israel.mp3', liked: true, playlist: 'Guitar Covers' },
+        { id: 7, title: 'Colossenses e Suas Linhas de Amor', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/colossenses.mp3', liked: false, playlist: 'Guitar Covers' },
+        { id: 8, title: 'Tu És + Águas Purificadoras', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/tu-es.mp3', liked: true, playlist: 'Guitar Covers' },
+        { id: 9, title: 'Solo Um Novo Dia', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/um-novo-dia.mp3', liked: false, playlist: 'Guitar Covers' },
+        { id: 10, title: 'Como Flecha - Guitar Cover', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/como-flecha.mp3', liked: true, playlist: 'Guitar Covers' },
+        { id: 11, title: 'Solo Há Poder', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/ha-poder.mp3', liked: false, playlist: 'Guitar Covers' },
+        { id: 12, title: 'Guitar Cam Um Novo Dia', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/novo-dia.mp3', liked: true, playlist: 'Guitar Covers' },
+        { id: 13, title: 'Lindo Momento', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/lindo-momento-rony.mp4', liked: false, playlist: 'Guitar Covers' },
+        { id: 14, title: 'Você Tem Valor', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/voce-tem-valor.mp4', liked: true, playlist: 'Guitar Covers' },
+        { id: 15, title: 'Aonde Está Deus', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/aonde-esta-Deus.mp4', liked: false, playlist: 'Guitar Covers' },
+        { id: 16, title: 'Deus de Promessas', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/Deus-de-promessas.mp4', liked: true, playlist: 'Guitar Covers' },
+        { id: 17, title: 'Teste', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/Deus-de-promessas.mp4', liked: false, playlist: 'Guitar Covers' },
     ];
     saveTracks();
 }
@@ -323,8 +323,6 @@ function fmt(s) {
     return `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, '0')}`;
 }
 
-render(tracks);
-
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
         navigator.serviceWorker
@@ -333,3 +331,104 @@ if ('serviceWorker' in navigator) {
             .catch((err) => console.warn('[SW] Falhou:', err));
     });
 }
+
+function renderPlaylists() {
+
+    const names = [...new Set(tracks.filter(t => t.playlist).map(t => t.playlist))];
+    if (!names.length) return;
+
+    let container = document.getElementById('playlistSection');
+    if (!container) {
+        container = document.createElement('div');
+        container.id = 'playlistSection';
+        document.querySelector('.section-header').insertAdjacentElement('beforebegin', container);
+    }
+
+    container.innerHTML = `
+        <div class="section-header" style="margin-bottom:16px;">
+            <div class="section-title">Playlists</div>
+        </div>
+        ${names.map(name => {
+        const songs = tracks.filter(t => t.playlist === name);
+        return `
+            <div class="playlist-box" id="box-${name.replace(/\s/g, '-')}" onclick="togglePlaylist(this)">
+                <div class="playlist-box-header">
+                    <div class="playlist-box-info">
+                        <span class="playlist-box-emoji">🎸</span>
+                        <div>
+                            <div class="playlist-box-name">${name}</div>
+                            <div class="playlist-box-count">${songs.length} músicas</div>
+                        </div>
+                    </div>
+                    <span class="playlist-chevron">▾</span>
+                </div>
+                <div class="playlist-tracks" style="display:none;">
+                    ${songs.map((t) => `
+                    <div class="track-item ${currentIdx !== -1 && tracks[currentIdx]?.id === t.id ? 'active' : ''}"
+                         onclick="event.stopPropagation(); playTrack(${tracks.indexOf(t)})">
+                        <div class="track-num">${tracks.indexOf(t) + 1}</div>
+                        <div class="track-cover">${t.emoji}</div>
+                        <div class="track-meta">
+                            <div class="track-name">${t.title}</div>
+                            <div class="track-artist-name">${t.artist}</div>
+                        </div>
+                        <div class="track-duration">${t.duration || '—'}</div>
+                        <button class="track-like ${t.liked ? 'liked' : ''}"
+                            onclick="event.stopPropagation(); toggleLike(${tracks.indexOf(t)})">
+                            <svg width="14" height="14" viewBox="0 0 24 24"
+                                fill="${t.liked ? 'currentColor' : 'none'}"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                    </div>`).join('')}
+                </div>
+            </div>`;
+    }).join('')}
+    `;
+}
+
+function togglePlaylist(box) {
+    const tracks_div = box.querySelector('.playlist-tracks');
+    const chevron = box.querySelector('.playlist-chevron');
+    const open = tracks_div.style.display === 'block';
+    tracks_div.style.display = open ? 'none' : 'block';
+    chevron.style.transform = open ? '' : 'rotate(180deg)';
+}
+
+const playlistStyle = document.createElement('style');
+playlistStyle.textContent = `
+.playlist-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+.playlist-box:hover { border-color: rgba(232,255,71,0.3); }
+.playlist-box-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+}
+.playlist-box-info { display: flex; align-items: center; gap: 14px; }
+.playlist-box-emoji {
+    width: 48px; height: 48px; border-radius: 10px;
+    background: #1e1e2a; display: flex; align-items: center;
+    justify-content: center; font-size: 1.5rem;
+}
+.playlist-box-name { font-size: 0.95rem; font-weight: 500; }
+.playlist-box-count { font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
+.playlist-chevron {
+    color: var(--muted); font-size: 1.1rem;
+    transition: transform 0.25s;
+}
+.playlist-tracks { padding: 0 8px 8px; }
+`;
+document.head.appendChild(playlistStyle);
+
+render(tracks);
+renderPlaylists();
