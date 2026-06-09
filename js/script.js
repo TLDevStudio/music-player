@@ -81,7 +81,7 @@ if (tracks.length === 0) {
         { id: 67, title: "Alive", artist: "Pearl Jam", genre: 'Rock', year: '2026', emoji: '🤘', url: './music/alive.mp3', liked: false, playlist: 'Pearl Jam - As Melhores' },
         { id: 68, title: "Black", artist: "Pearl Jam", genre: 'Rock', year: '2026', emoji: '🤘', url: './music/black.mp3', liked: false, playlist: 'Pearl Jam - As Melhores' },
         { id: 69, title: "Anderson Freire - Medley", artist: "Anderson Freire", genre: 'Gospel', year: '2026', emoji: '🙏', url: './music/anderson-medley.mp3', liked: false, playlist: 'Louvores' },
-        { id: 70, title: "Eu Vou Orar - (Ao Vivo)", artist: "Nair Nani", genre: 'Gospel', year: '2026', emoji: '🙏', url: './music/eu-vou-orar.mp3', liked: false, playlist: 'Louvores' },
+        // { id: 70, title: "Eu Vou Orar - (Ao Vivo)", artist: "Nair Nani", genre: 'Gospel', year: '2026', emoji: '🙏', url: './music/eu-vou-orar.mp3', liked: false, playlist: 'Louvores' },
         { id: 71, title: "Atos 2 + Ele é Exaltado - (Ao Vivo)", artist: "Gabriel Guedes", genre: 'Gospel', year: '2026', emoji: '🙏', url: './music/atos-2-ele-exaltado.mp3', liked: false, playlist: 'Louvores' },
         { id: 72, title: "Yahweh", artist: "One Service", genre: 'Gospel', year: '2026', emoji: '🙏', url: './music/yahweh.mp3', liked: false, playlist: 'Louvores' },
         { id: 73, title: "João 20 + Pra Sempre + Porque Ele Vive", artist: "Ezequiel Oliveira", genre: 'Gospel', year: '2026', emoji: '🙏', url: './music/joao-20.mp3', liked: false, playlist: 'Louvores' },
