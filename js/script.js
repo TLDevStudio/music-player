@@ -28,6 +28,7 @@ if (tracks.length === 0) {
         { id: 14, title: 'Você Tem Valor', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/voce-tem-valor.mp4', liked: true },
         { id: 15, title: 'Aonde Está Deus', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/aonde-esta-Deus.mp4', liked: false },
         { id: 16, title: 'Deus de Promessas', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/Deus-de-promessas.mp4', liked: true },
+        { id: 17, title: 'Teste', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/Deus-de-promessas.mp4', liked: false },
     ];
     saveTracks();
 }
@@ -216,7 +217,6 @@ progressBar.addEventListener('click', (e) => {
     applySeek(getProgressPct(progressBar, e.clientX));
 });
 
-// Touch - deslizar o dedo
 let isSeeking = false;
 progressBar.addEventListener('touchstart', (e) => {
     isSeeking = true;
@@ -232,7 +232,6 @@ progressBar.addEventListener('touchmove', (e) => {
 
 progressBar.addEventListener('touchend', () => { isSeeking = false; });
 
-// ── Volume ──
 function setVolume(e) {
     const bar = document.getElementById('volSlider');
     volume = Math.max(0, Math.min(1, e.offsetX / bar.offsetWidth));
