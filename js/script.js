@@ -28,7 +28,8 @@ if (tracks.length === 0) {
         { id: 14, title: 'Você Tem Valor', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/voce-tem-valor.mp4', liked: true, playlist: 'Guitar Covers' },
         { id: 15, title: 'Aonde Está Deus', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/aonde-esta-Deus.mp4', liked: false, playlist: 'Guitar Covers' },
         { id: 16, title: 'Deus de Promessas', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/Deus-de-promessas.mp4', liked: true, playlist: 'Guitar Covers' },
-        { id: 17, title: 'Teste', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/Deus-de-promessas.mp4', liked: false, playlist: 'Guitar Covers' },
+        { id: 17, title: 'All of Me', artist: 'Jhon Legend', genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/all-of-me.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        
     ];
     saveTracks();
 }
