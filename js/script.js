@@ -13,23 +13,55 @@ audio.volume = volume;
 if (tracks.length === 0) {
     tracks = [
         { id: 1, title: 'Me Enxergou na Minha Tormenta', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/lindo-momento.mp3', liked: false, playlist: 'Guitar Covers' },
-        { id: 2, title: 'Fhop Music - Único', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/fhop-unico.mp3', liked: true, playlist: 'Guitar Covers' },
+        { id: 2, title: 'Fhop Music - Único', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/fhop-unico.mp3', liked: false, playlist: 'Guitar Covers' },
         { id: 3, title: 'Quebra o Silêncio', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/quebra-o-silencio.mp3', liked: false, playlist: 'Guitar Covers' },
-        { id: 4, title: 'Quem é Esse', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/quem-e-esse.mp3', liked: true, playlist: 'Guitar Covers' },
+        { id: 4, title: 'Quem é Esse', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/quem-e-esse.mp3', liked: false, playlist: 'Guitar Covers' },
         { id: 5, title: 'Até Que o Senhor Venha', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/ate-que-o-senhor-venha.mp3', liked: false, playlist: 'Guitar Covers' },
-        { id: 6, title: 'O Lamento de Israel', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/o-lamento-de-israel.mp3', liked: true, playlist: 'Guitar Covers' },
+        { id: 6, title: 'O Lamento de Israel', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/o-lamento-de-israel.mp3', liked: false, playlist: 'Guitar Covers' },
         { id: 7, title: 'Colossenses e Suas Linhas de Amor', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/colossenses.mp3', liked: false, playlist: 'Guitar Covers' },
-        { id: 8, title: 'Tu És + Águas Purificadoras', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/tu-es.mp3', liked: true, playlist: 'Guitar Covers' },
+        { id: 8, title: 'Tu És + Águas Purificadoras', artist: 'Paulo Vitor', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/tu-es.mp3', liked: false, playlist: 'Guitar Covers' },
         { id: 9, title: 'Solo Um Novo Dia', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/um-novo-dia.mp3', liked: false, playlist: 'Guitar Covers' },
-        { id: 10, title: 'Como Flecha - Guitar Cover', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/como-flecha.mp3', liked: true, playlist: 'Guitar Covers' },
+        { id: 10, title: 'Como Flecha - Guitar Cover', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/como-flecha.mp3', liked: false, playlist: 'Guitar Covers' },
         { id: 11, title: 'Solo Há Poder', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/ha-poder.mp3', liked: false, playlist: 'Guitar Covers' },
-        { id: 12, title: 'Guitar Cam Um Novo Dia', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/novo-dia.mp3', liked: true, playlist: 'Guitar Covers' },
+        { id: 12, title: 'Guitar Cam Um Novo Dia', artist: 'Ageu Garrida', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/novo-dia.mp3', liked: false, playlist: 'Guitar Covers' },
         { id: 13, title: 'Lindo Momento', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/lindo-momento-rony.mp4', liked: false, playlist: 'Guitar Covers' },
-        { id: 14, title: 'Você Tem Valor', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/voce-tem-valor.mp4', liked: true, playlist: 'Guitar Covers' },
+        { id: 14, title: 'Você Tem Valor', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/voce-tem-valor.mp4', liked: false, playlist: 'Guitar Covers' },
         { id: 15, title: 'Aonde Está Deus', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/aonde-esta-Deus.mp4', liked: false, playlist: 'Guitar Covers' },
-        { id: 16, title: 'Deus de Promessas', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/Deus-de-promessas.mp4', liked: true, playlist: 'Guitar Covers' },
+        { id: 16, title: 'Deus de Promessas', artist: 'Rony Hanoff', genre: 'Gospel', year: '2026', emoji: '🎸', url: './music/Deus-de-promessas.mp4', liked: false, playlist: 'Guitar Covers' },
         { id: 17, title: 'All of Me', artist: 'Jhon Legend', genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/all-of-me.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
-        
+        { id: 18, title: "If l Ain't Got You", artist: 'Alicia Keys', genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/alicia-keys.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 19, title: "Thank God | Found You - Make It Last Remix", artist: 'Mariah Carey, Joe, Nas', genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/thank-god.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 20, title: "Emotion", artist: "Destiny's Child", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/emotion.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 21, title: "Like I'm Gonna Lose You (Lyrics) ft. John Legend", artist: "Meghan Trainor", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/meghan-trainor.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 22, title: "With You", artist: "Chris Brown", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/with-you.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 23, title: "Body Party", artist: "Ciara", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/body-party.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 24, title: "Let Me Love You", artist: "Mario", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/let-me-love-you.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 25, title: "My Boo", artist: "Usher ft. Alicia Keys", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/my-boo.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 26, title: "I Wanna Know", artist: "Joe", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/i-wanna-know.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 27, title: "Everything To Me", artist: "Monica", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/everything-to-me.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 28, title: "Differences", artist: "Ginuwine", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/differences.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 29, title: "So Easy (To Fall In Love)", artist: "Olivia Dean", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/olivia-dean.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 30, title: "Die With A Smile", artist: "Lady Gaga, Bruno Mars", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/bruno-mars.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 31, title: "Yellow", artist: "Coldplay", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/yellow.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 32, title: "Iris", artist: "Goo Goo Dolls", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/iris.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 33, title: "Risk It All", artist: "Bruno Mars", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/risk-it-all.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 34, title: "BIRDS OF A FEATHER", artist: "Billie Eilish", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/billie-eilish.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 35, title: "Always Remember Us This Way", artist: "Lady Gaga", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/lady-gaga.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 36, title: "Beautiful Things", artist: "Benson Boone", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/beautiful-things.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 37, title: "Sailor Song", artist: "Gigi Perez", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/sailor-song.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 38, title: "Rihanna", artist: "Love On The Brain", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/love-on-the-brain.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 39, title: "LANDOKMAI, will hyde", artist: "Backflips.", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/backflips.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 40, title: "Remind Me", artist: "Faust", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/remind-me.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 41, title: "Snooze", artist: "SZA", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/snooze.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 42, title: "Here With Me", artist: "d4vd", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/here-with-me.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 43, title: "My Love Mine All Mine", artist: "Mitski", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/mitski.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 44, title: "The Scientist", artist: "Coldplay", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/the-scientist.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 45, title: "Cliché", artist: "Nicole Issa", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/cliche.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 46, title: "Say You Won't Let Go", artist: "James Arthur", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/james-arthur.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 47, title: "Señorita", artist: "Shawn Mendes, Camila Cabello", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/senorita.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 48, title: "Big Girls Don't Cry", artist: "Fergie", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/fergie.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+        { id: 49, title: "Shallow", artist: "Lady Gaga, Bradley Cooper", genre: 'Internacional', year: '2026', emoji: '❤️', url: './music/shallow.mp3', liked: false, playlist: 'Valentines Day - R&B Love' },
+
     ];
     saveTracks();
 }
@@ -355,7 +387,7 @@ function renderPlaylists() {
             <div class="playlist-box" id="box-${name.replace(/\s/g, '-')}" onclick="togglePlaylist(this)">
                 <div class="playlist-box-header">
                     <div class="playlist-box-info">
-                        <span class="playlist-box-emoji">🎸</span>
+                        <span class="playlist-box-emoji">🎵</span>
                         <div>
                             <div class="playlist-box-name">${name}</div>
                             <div class="playlist-box-count">${songs.length} músicas</div>
