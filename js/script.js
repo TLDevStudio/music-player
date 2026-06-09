@@ -5,8 +5,6 @@ if (localStorage.getItem('mysound_data_version') !== DATA_VERSION) {
 }
 
 let tracks = JSON.parse(localStorage.getItem('mysound_tracks') || '[]');
-
-let tracks = JSON.parse(localStorage.getItem('mysound_tracks') || '[]');
 let currentIdx = -1;
 let isPlaying = false;
 let isShuffle = false;
