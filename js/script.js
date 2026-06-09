@@ -1,3 +1,11 @@
+const DATA_VERSION = 'v5';
+if (localStorage.getItem('mysound_data_version') !== DATA_VERSION) {
+    localStorage.removeItem('mysound_tracks');
+    localStorage.setItem('mysound_data_version', DATA_VERSION);
+}
+
+let tracks = JSON.parse(localStorage.getItem('mysound_tracks') || '[]');
+
 let tracks = JSON.parse(localStorage.getItem('mysound_tracks') || '[]');
 let currentIdx = -1;
 let isPlaying = false;
